@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    background-color: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .logo {
+    width: 100px;
+  }
+  .navbar a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+  }
+  .profile {
+    margin-left: auto;
+    position: relative;
+  }
+  .profile-icon {
+    width: 35px;
+    cursor: pointer;
+  }
+  .dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background-color: #222;
+    padding: 10px;
+  }
+  .profile:hover .dropdown {
+    display: block;
+  }
+  .banner {
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding: 60px;
+  }
+  .banner-content {
+    max-width: 600px;
+  }
+  .movies {
+    display: flex;
+    overflow-x: scroll;
+    padding: 20px;
+  }
+  .movies img {
+    width: 200px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .trailer-popup {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 999;
+  }
+  .trailer-popup iframe {
+    border: none;
+  }
+  #close-popup {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    cursor: pointer;
+  }
+  

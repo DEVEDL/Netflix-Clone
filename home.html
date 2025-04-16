@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Home</title>
+  <link rel="stylesheet" href="home_page.css">
+</head>
+<body>
+  <header class="header">
+    <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt="Netflix Logo">
+    <nav class="navbar">
+      <a href="#">Home</a>
+      <a href="#">TV Shows</a>
+      <a href="#">Movies</a>
+      <a href="#">New & Popular</a>
+      <a href="#">My List</a>
+    </nav>
+    <div class="profile">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" class="profile-icon">
+      <div class="dropdown">
+        <a href="#">Account</a>
+        <a href="index.html">Logout</a>
+      </div>
+    </div>
+  </header>
+  <section class="banner">
+    <div class="banner-content">
+      <h1 id="banner-title"></h1>
+      <p id="banner-description"></p>
+      <button>Play</button>
+      <button>My List</button>
+    </div>
+  </section>
+  <section class="row">
+    <h2>Trending Now</h2>
+    <div class="movies" id="trending"></div>
+  </section>
+  <div id="trailer-popup" class="trailer-popup">
+    <span id="close-popup">&times;</span>
+    <iframe id="trailer-frame" width="800" height="450" allow="autoplay"></iframe>
+  </div>
+  <script src="script1.js"></script>
+</body>
+</html>
